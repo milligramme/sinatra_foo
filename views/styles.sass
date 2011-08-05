@@ -1,0 +1,39 @@
+// @import "reset"
+
+$base: #ccc
+$main: #664
+$link: #a00
+
+a
+  color: $link
+  font-weight: bold
+  
+  &:link
+    color: $link * 0.7
+  &:visited
+    color: $link * 0.5
+  &:hover
+    color: $link - #111111
+  &:active
+    color: $link * 0.3
+
+body
+  background-color: $base
+  color: $main
+
+.wrapper
+  margin: 0 auto
+  width: 720px
+  background: #fff
+  padding: 10px
+  
+  .main
+    border: 1px solid #aaa
+    h1
+      color: $main
+  
+  .header
+    border: 1px solid #999
+  
+  .footer
+    border: 1px solid #999

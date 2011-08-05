@@ -6,7 +6,7 @@ helpers do
 end
 
 get '/styles.css' do
-  scss :styles
+  sass :styles
 end
 
 get '/script.js' do
@@ -14,5 +14,9 @@ get '/script.js' do
 end
 
 get '/' do
+  haml :index
+end
+
+post '/' do
   haml :index
 end
